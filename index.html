@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Navigation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p{
+            line-height: 26px;
+        }
+        body {
+            font-family: "Inter", serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 100vh;
+            background-color:#fffaf3;
+            padding-bottom: 40px;
+        }
+        h1,h2,h3,h4{
+            font-family: "Josefin Sans", serif;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 12px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-item img {
+            width: 25px;
+            height: auto;
+            margin-bottom: 4px;
+        }
+
+        .active {
+            color: black;
+            font-weight: bold;
+        }
+        .banner img{
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        .banner {
+    position: relative;
+}
+
+.banner:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #00000038;
+}
+
+.banner .text-container {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    right: 5%;
+    color: #ffff;
+}
+
+.banner .text-container h1 {
+    margin-bottom: 30px;
+}
+.banner .text-container p {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+a.primary-btn {
+    border: solid 2px #ffb03b;
+    padding: 10px 24px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 26px;
+    min-width: 148px;
+    display: inline-block;
+    text-align: center;
+}
+.about {
+    padding: 60px 14px;
+}
+.about img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    line-height: 28px;
+    color: #433f39;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <img src="/img/banner.jpg" alt="">
+        <div class="text-container">
+            <h1>Royal St  Kitts Hotel</h1>
+            <p>Welcome to The Royal St  Kitts Hotel, your home away from home in the heart of paradise. We are honored to host you and committed to making your stay exceptional with our warm hospitality and world-class service.</p>
+            <a class="primary-btn" href="#">Contact Us</a>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <a href="#" class="nav-item">
+            <img src="/img/info.png" alt="">
+                          <span>Informations</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="/img/dinner.png" alt="">
+              
+            <span>Dining</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="/img/emergency.png" alt="">
+            <span>Emergency</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="/img/insurance.png" alt="">
+            <span>Policies</span>
+        </a>
+        <a href="#" class="nav-item">
+            <img src="/img/tv.png" alt="">
+            <span>Channels</span>
+        </a>
+    </div>
+
+    <div class="about">
+        <img src="/img/about.jpg" alt="">
+        <h2>Whether you're here for business or leisure, our team is here to ensure a comfortable, memorable experience. 
+        </h2>
+        <p>Enjoy our top-tier amenities, dining, and entertainment, and please don’t hesitate to reach out if there’s anything we can do to enhance your stay.</p>
+    </div>
+
+</body>
+</html>
