@@ -4,159 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bottom Navigation</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        p{
-            line-height: 26px;
-        }
-        body {
-            font-family: "Inter", serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            min-height: 100vh;
-            background-color:#fffaf3;
-            padding-bottom: 40px;
-        }
-        h1,h2,h3,h4{
-            font-family: "Josefin Sans", serif;
-        }
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: white;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 12px 0;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 20px 20px 0 0;
-        }
-
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: gray;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .nav-item img {
-            width: 25px;
-            height: auto;
-            margin-bottom: 4px;
-        }
-
-        .active {
-            color: black;
-            font-weight: bold;
-        }
-        .banner img{
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-        }
-        .banner {
-    position: relative;
-}
-
-.banner:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-color: #00000038;
-}
-
-.banner .text-container {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    right: 5%;
-    color: #ffff;
-}
-
-.banner .text-container h1 {
-    margin-bottom: 30px;
-}
-.banner .text-container p {
-    line-height: 24px;
-    margin-bottom: 40px;
-}
-a.primary-btn {
-    border: solid 2px #ffb03b;
-    padding: 10px 24px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 26px;
-    min-width: 148px;
-    display: inline-block;
-    text-align: center;
-}
-.about {
-    padding: 60px 14px;
-}
-.about img {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.about h2 {
-    line-height: 28px;
-    color: #433f39;
-    margin-bottom: 20px;
-}
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <div class="banner">
-        <img src="img/banner.jpg" alt="">
+        <img src="./img/banner.jpg" alt="">
         <div class="text-container">
             <h1>Royal St  Kitts Hotel</h1>
             <p>Welcome to The Royal St  Kitts Hotel, your home away from home in the heart of paradise. We are honored to host you and committed to making your stay exceptional with our warm hospitality and world-class service.</p>
-            <a class="primary-btn" href="#">Contact Us</a>
         </div>
     </div>
     <div class="bottom-nav">
+        
         <a href="#" class="nav-item">
-            <img src="img/info.png" alt="">
-                          <span>Informations</span>
-        </a>
-        <a href="#" class="nav-item">
-            <img src="img/dinner.png" alt="">
+            <img src="./img/dinner.png" alt="">
               
             <span>Dining</span>
         </a>
         <a href="#" class="nav-item">
-            <img src="img/emergency.png" alt="">
+            <img src="./img/emergency.png" alt="">
             <span>Emergency</span>
         </a>
+        <a href="./index.html" class="nav-item">
+            <img src="./img/info.png" alt="">
+                          <span>Home</span>
+        </a>
         <a href="#" class="nav-item">
-            <img src="img/insurance.png" alt="">
+            <img src="./img/insurance.png" alt="">
             <span>Policies</span>
         </a>
         <a href="#" class="nav-item">
-            <img src="img/tv.png" alt="">
+            <img src="./img/tv.png" alt="">
             <span>Channels</span>
         </a>
     </div>
 
     <div class="about">
-        <img src="img/about.jpg" alt="">
         <h2>Whether you're here for business or leisure, our team is here to ensure a comfortable, memorable experience. 
         </h2>
         <p>Enjoy our top-tier amenities, dining, and entertainment, and please don’t hesitate to reach out if there’s anything we can do to enhance your stay.</p>
     </div>
+
+    <section class="information info-text-center">
+        <div class="container">
+          <div class="header">Resort Informatios</div>
+  
+          <div class="card">
+            <div class="title">Resort Telephone</div>
+            <div class="info">(869) 465-8651</div>
+          </div>
+          <div class="card">
+            <div class="title">Resort Web Site</div>
+            <div class="info">www.royalstkittshotel.com</div>
+          </div>
+          <div class="card">
+            <div class="title">Banquet Services</div>
+            <div class="info">(869) 465-8651, Extension 733</div>
+          </div>
+          <div class="card">
+            <div class="title">Resort Contact Information</div>
+            <div class="info">
+              P. O. Box 406, Zenway Blvd., Frigate Bay, West Indies
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Resort Telephone</div>
+            <div class="info">(869) 465-8651</div>
+          </div>
+          <h4>Telephone Dialing Instructions</h4>
+          <div class="card">
+            <div class="title">Guest Rooms</div>
+            <div class="info">dial (room number)</div>
+          </div>
+          <div class="card">
+            <div class="title">Resort operator</div>
+            <div class="info">dial "0"</div>
+          </div>
+          <div class="card">
+            <div class="title">Local and neighboring islands</div>
+            <div class="info">dial 9 + area code + number</div>
+          </div>
+          <div class="card">
+            <div class="title">USA & Canada long distance</div>
+            <div class="info">dial 9 + 1+area code + number</div>
+          </div>
+          <h4>Direct Dial</h4>
+          <div class="card">
+            <div class="title">Local Calls</div>
+            <div class="info">dial 9 + number</div>
+            <div class="info">(Hotel charge + Tax will apply) US dollars</div>
+          </div>
+  
+          <div class="card">
+            <div class="title">Operator Assisted Calls</div>
+            <div class="info">dial “0”</div>
+            <div class="info">(Hotel charge + Tax will apply) US dollars</div>
+          </div>
+        </div>
+      </section>
+      <section class="information info-text-center">
+        <div class="container">
+          <div class="header">General Information</div>
+  
+          <div class="card">
+            <div class="title">Physically Challenged Access</div>
+            <div class="info">
+              The Royal St. Kitts Hotel will try to accommodate the special needs
+              of physically challenged guests to the best of our ability and
+              availability. Most of our property is equipped with wheelchair ramps
+              from our parking lot throughout the resort, Splash pool and
+              restaurants. Should there be an area you wish to access and need
+              assistance, our associates are on hand to accommodate. Inquire by
+              dialing “0” or visit our Guest Services Desk in the Lobby.
+              Wheelchair is available for your use and convenience. Inquire at our
+              Guest Services desk if you wish to reserve our equipment during your
+              stay
+            </div>
+          </div>
+          <div class="card">
+              <div class="title">Hotel In-Room Guest Safe</div>
+              <div class="info">
+                  For your privacy and convenience your room is equipped with a complimentary safe, located inside your room closet. The Royal St. Kitts Hotel are not liable for items left unsecured. The safe can be programed with your own personal code. Any issues with your in-room safe or should you require assistance, dial “0” for our Guest Service Desk and our Maintenance team will be there to assist you.
+              </div>
+          </div>
+          <div class="card">
+              <div class="title">Taxi</div>
+              <div class="info">
+                  Our Guest Service Desk will gladly assist you with securing a licensed, authorized taxi service. The local taxi are professional, clean and payment is in US or EC dollars.            </div>
+          </div>
+          <div class="card">
+              <div class="title">Voice Mail</div>
+              <div class="info">
+                  The resort is equipped with an automated answering system. Follow the instructions on the phone or contact the operator for instruction on how to retrieve your messages.        </div>
+          </div>
+          <div class="card">
+              <div class="title">Wake Up Calls</div>
+              <div class="info">
+                  To request a wake-up call, dial “0” for the Guest Service Desk.
+              </div>
+          </div>
+          <div class="card">
+              <div class="title">Parking</div>
+              <div class="info">
+                  Hotel registration parking located directly at the Hotel lobby entrance. Hotel guest’s parking during your stay is the main lot directly in front of the Hotel, next to the fountain. Extended stay tenants parking is the Southwest lot to the left of the Hotel entrance.
+              </div>
+          </div>
+          <div class="card">
+              <div class="title">Pools</div>
+              <div class="info">
+                  There are two guest pools on the resort.
+  
+  Saltwater pool located on the Slash Bar and Restaurant area. Pool towels are available at this pool for your use and convenience. After use, return to the bins located in that area.
+  
+  Chlorinated pool located on the Southeast side of the resort. Pool towels can be obtained from Splash Bar or the Guest Service Desk in the Lobby.
+  
+  Be advised of our pool regulations for the safety of you and other guests. Swim attire only in the pools, no cotton, shirts, shorts are not acceptable.
+  
+  Pets, are not allowed on the pool deck or swimming in our pools, this is to ensure sanitation codes are met and avoid pool closures.
+  
+  Visiting our beaches. Towels are available from our Guest Service Desk for your use at the St. Kitts beaches. Be sure to return the towels to the Guest Service Desk once arriving back at the resort. Towel charge will apply to your room for the unreturned resort towels.
+              </div>
+          </div>
+          <div class="card">
+              <div class="title">Sunbathing</div>
+              <div class="info">
+                  While your aim to achieve the perfect tan, be sure to use sun protection products and avoid direct sun and avoid exposure during 10:00 a.m. and 2:00 p.m. Over exposure to sun may result in dizziness, fatigue, headache, nausea and sometimes vomiting. If you experience these symptoms, dial “0” for our Guest Service Desk who can connect you with Medical Doctor Services.
+              </div>
+          </div>
+          <div class="card">
+              <div class="title">Traveler’s Illness</div>
+              <div class="info">
+                  Traveling to foreign countries and changes to diet may sometimes cause upset stomach and other discomforts. For assistance contact Guest Service Desk who will connect you with a Medical Doctor and Emergency Services.
+  
+                  There is Meridian Medical Pharmacy with limited hours for Medical Services in the area. Out front of the Hotel, turn right and the Pharmacy is one block away, within walking distance.
+              </div>
+          </div>
+          
+      </section>
 
 </body>
 </html>
